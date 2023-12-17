@@ -14,6 +14,7 @@
     <script type="text/javascript">
         let jqueryParams = [], jQuery = function (r) { return jqueryParams = [...jqueryParams, r], jQuery }, $ = function (r) { return jqueryParams = [...jqueryParams, r], $ }; window.jQuery = jQuery, window.$ = jQuery; let customHeadScripts = !1; jQuery.fn = jQuery.prototype = {}, $.fn = jQuery.prototype = {}, jQuery.noConflict = function (r) { if (window.jQuery) return jQuery = window.jQuery, $ = window.jQuery, customHeadScripts = !0, jQuery.noConflict }, jQuery.ready = function (r) { jqueryParams = [...jqueryParams, r] }, $.ready = function (r) { jqueryParams = [...jqueryParams, r] }, jQuery.load = function (r) { jqueryParams = [...jqueryParams, r] }, $.load = function (r) { jqueryParams = [...jqueryParams, r] }, jQuery.fn.ready = function (r) { jqueryParams = [...jqueryParams, r] }, $.fn.ready = function (r) { jqueryParams = [...jqueryParams, r] };</script>
     <link rel='dns-prefetch' href='//fonts.googleapis.com'>
+    <link rel="icon" href="wp-includes/images/favicon-32x32.png">
     <style id='wp-block-library-theme-inline-css' type='text/css'>
         .wp-block-audio figcaption {
             color: #555;
@@ -6339,16 +6340,6 @@
     <link rel='stylesheet' id='dsm-readmore-css'
         href='wp-content/plugins/supreme-modules-pro-for-divi/public/css/readmore.css?ver=4.9.78' type='text/css'
         media='all'>
-    <link rel="https://api.w.org/" href="wp-json/index.htm">
-    <link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/9">
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd">
-    <meta name="generator" content="WordPress 6.4.2">
-    <link rel="canonical" href="index.htm">
-    <link rel='shortlink' href='index.htm'>
-    <link rel="alternate" type="application/json+oembed"
-        href="wp-json/oembed/1.0/embed?url=http%3A%2F%2Fportfolio.local%2F">
-    <link rel="alternate" type="text/xml+oembed"
-        href="wp-json/oembed/1.0/embed-1?url=http%3A%2F%2Fportfolio.local%2F&#038;format=xml">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <style id="et-critical-inline-css">
         @media only screen and (min-width:981px) {
@@ -6469,6 +6460,10 @@
         }
 
         @media only screen and (max-width:980px) {
+            .et_pb_section_0.et_pb_section {
+                background-color: #3ce6e6 !important
+            }
+
             .et_pb_text_0 h1 {
                 font-size: 60px
             }
@@ -6479,6 +6474,14 @@
         }
 
         @media only screen and (max-width:767px) {
+            div.et_pb_section.et_pb_section_0 {
+                background-image: initial !important
+            }
+
+            .et_pb_section_0.et_pb_section {
+                background-color: #3ce6e6 !important
+            }
+
             .et_pb_text_0 h1 {
                 font-size: 35px
             }
@@ -6661,7 +6664,8 @@
                                                     <div class="dnxt-text-reveal">
                                                         <div class="dnxt-reveal-text-container">
                                                             <div class="">
-                                                                <h2 class="dnxt-gradient-text dnxt-gradient-text-color  ">
+                                                                <h2
+                                                                    class="dnxt-gradient-text dnxt-gradient-text-color  ">
                                                                     Projects we&#039;ve worked on</h2>
                                                             </div>
                                                         </div>
@@ -6718,8 +6722,7 @@
                                                         </div>
                                                         <div id="post-52"
                                                             class="et_pb_portfolio_item et_pb_grid_item project_category_php et_pb_filterable_portfolio_item_0_1 post-52 project type-project status-publish has-post-thumbnail hentry project_category-php">
-                                                            <a
-                                                                href="https://www.dolistore.com/en/modules/1615-MoceanAPI-Send-SMS.html" target="_blank">
+                                                            <a href="https://www.dolistore.com/en/modules/1615-MoceanAPI-Send-SMS.html" target="_blank">
                                                                 <span class="et_portfolio_image">
                                                                     <img loading="lazy" decoding="async"
                                                                         src="wp-content/uploads/2023/11/dolibarr-400x284.png"
@@ -6740,8 +6743,7 @@
                                                         </div>
                                                         <div id="post-50"
                                                             class="et_pb_portfolio_item et_pb_grid_item project_category_php et_pb_filterable_portfolio_item_0_2 post-50 project type-project status-publish has-post-thumbnail hentry project_category-php">
-                                                            <a
-                                                                href="https://wordpress.org/plugins/moceansms-order-sms-notification-for-woocommerce/" target="_blank">
+                                                            <a href="https://wordpress.org/plugins/moceansms-order-sms-notification-for-woocommerce/" target="_blank">
                                                                 <span class="et_portfolio_image">
                                                                     <img loading="lazy" decoding="async"
                                                                         src="wp-content/uploads/2023/11/woocommerce-400x284.png"
@@ -6885,7 +6887,6 @@
 
 
             <footer id="main-footer">
-
                 <div class="container">
                     <div id="footer-widgets" class="clearfix">
                         <div class="footer-widget">
@@ -6898,7 +6899,6 @@
                         <div class="footer-widget"></div>
                     </div>
                 </div>
-
                 <div id="footer-bottom">
                     <div class="container clearfix">
                         <div id="footer-info">Image by <a
@@ -6934,7 +6934,7 @@
         var DIVI = { "item_count": "%d Item", "items_count": "%d Items" };
         var et_builder_utils_params = { "condition": { "diviTheme": true, "extraTheme": false }, "scrollLocations": ["app", "top"], "builderScrollLocations": { "desktop": "app", "tablet": "app", "phone": "app" }, "onloadScrollLocation": "app", "builderType": "fe" };
         var et_frontend_scripts = { "builderCssContainerPrefix": "#et-boc", "builderCssLayoutPrefix": "#et-boc .et-l" };
-        var et_pb_custom = { "ajaxurl": "http:\/\/portfolio.local\/wp-admin\/admin-ajax.php", "images_uri": "http:\/\/portfolio.local\/wp-content\/themes\/Divi\/images", "builder_images_uri": "http:\/\/portfolio.local\/wp-content\/themes\/Divi\/includes\/builder\/images", "et_frontend_nonce": "b82010204e", "subscription_failed": "Please, check the fields below to make sure you entered the correct information.", "et_ab_log_nonce": "4f2d77922b", "fill_message": "Please, fill in the following fields:", "contact_error_message": "Please, fix the following errors:", "invalid": "Invalid email", "captcha": "Captcha", "prev": "Prev", "previous": "Previous", "next": "Next", "wrong_captcha": "You entered the wrong number in captcha.", "wrong_checkbox": "Checkbox", "ignore_waypoints": "no", "is_divi_theme_used": "1", "widget_search_selector": ".widget_search", "ab_tests": [], "is_ab_testing_active": "", "page_id": "9", "unique_test_id": "", "ab_bounce_rate": "5", "is_cache_plugin_active": "no", "is_shortcode_tracking": "", "tinymce_uri": "http:\/\/portfolio.local\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors", "accent_color": "#7EBEC5", "waypoints_options": [] };
+        var et_pb_custom = { "ajaxurl": "http:\/\/portfolio.local\/wp-admin\/admin-ajax.php", "images_uri": "http:\/\/portfolio.local\/wp-content\/themes\/Divi\/images", "builder_images_uri": "http:\/\/portfolio.local\/wp-content\/themes\/Divi\/includes\/builder\/images", "et_frontend_nonce": "3170ad5445", "subscription_failed": "Please, check the fields below to make sure you entered the correct information.", "et_ab_log_nonce": "260ad2b3fe", "fill_message": "Please, fill in the following fields:", "contact_error_message": "Please, fix the following errors:", "invalid": "Invalid email", "captcha": "Captcha", "prev": "Prev", "previous": "Previous", "next": "Next", "wrong_captcha": "You entered the wrong number in captcha.", "wrong_checkbox": "Checkbox", "ignore_waypoints": "no", "is_divi_theme_used": "1", "widget_search_selector": ".widget_search", "ab_tests": [], "is_ab_testing_active": "", "page_id": "9", "unique_test_id": "", "ab_bounce_rate": "5", "is_cache_plugin_active": "no", "is_shortcode_tracking": "", "tinymce_uri": "http:\/\/portfolio.local\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors", "accent_color": "#7EBEC5", "waypoints_options": [] };
         var et_pb_box_shadow_elements = [];
         /* ]]> */
     </script>
@@ -6950,7 +6950,7 @@
         id="divi-essential-frontend-bundle-js"></script>
     <script type="text/javascript" id="divi-plus-frontend-bundle-js-extra">
         /* <![CDATA[ */
-        var DiviPlusFrontendData = { "ajaxurl": "http:\/\/portfolio.local\/wp-admin\/admin-ajax.php", "ajaxnonce": "7769773851" };
+        var DiviPlusFrontendData = { "ajaxurl": "http:\/\/portfolio.local\/wp-admin\/admin-ajax.php", "ajaxnonce": "3f0005cbc0" };
         /* ]]> */
     </script>
     <script type="text/javascript" src="wp-content/plugins/divi-plus/scripts/frontend-bundle.min.js?ver=1.9.15"
